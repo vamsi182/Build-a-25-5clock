@@ -1,0 +1,168 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: #f8fafc;
+}
+
+button {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #9caec5;
+  margin: 12px 0 32px;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.length-box {
+  min-width: 190px;
+  padding: 18px;
+  border-radius: 16px;
+  background: #1b293d;
+  border: 1px solid #304158;
+}
+
+.length-box h2 {
+  font-size: 16px;
+  color: #b9c8db;
+  margin: 0 0 18px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.controls span {
+  font-size: 28px;
+  font-weight: bold;
+  min-width: 30px;
+}
+
+.controls button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  background: #334761;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #436080;
+}
+
+.timer {
+  margin-top: 36px;
+}
+
+.timer-circle {
+  width: 270px;
+  height: 270px;
+  border: 7px solid #38bdf8;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 35px #38bdf822;
+}
+
+#timer-label {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 12px;
+  color: #cbd5e1;
+}
+
+#time-left {
+  font-family: monospace;
+  font-size: 46px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.timer-buttons button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#start_stop {
+  background: #38bdf8;
+  color: #0b1726;
+}
+
+#reset {
+  background: #29394f;
+  color: white;
+}
+
+.timer-buttons button:hover {
+  opacity: 0.85;
+}
+
+footer {
+  margin-top: 34px;
+  color: #7e91aa;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .length-box {
+    min-width: 150px;
+  }
+
+  .timer-circle {
+    width: 245px;
+    height: 245px;
+  }
+
+  #time-left {
+    font-size: 40px;
+  }
+}
